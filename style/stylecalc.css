@@ -1,0 +1,93 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600&display=swap');
+* {
+    padding: 0;
+    margin: 0;
+    outline: none;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    font-size: 22px;
+    border-radius: 18px
+}
+/*Fundo da calculadora*/
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: rgb(249, 255, 168);
+    
+}
+/*Visor que mostra o resultado*/
+input {
+    margin: 2px;
+    border: none;
+    border-radius: 15px;
+    background:rgb(185, 185, 185);
+}
+/*Tamanho do visor do resultado*/
+input[type=text] {
+    width: calc(100% - 4px);
+    height: 40px;
+}
+/*Tamanho dos botões*/
+input[type=button] {
+    width: 150px;
+    height: 50px;
+    transition: ease 0.2s;
+    cursor: pointer;
+    background: red;
+}
+input[id = apaga]{
+    transition: ease 0.2s;
+    cursor: pointer;
+    background: rgb(102, 101, 101);
+    margin-left:2px;
+    color:rgb(255, 255, 255);
+    
+}
+/*SOMBRA da calc*/
+div#calculadora {
+    box-shadow: 0 0 20px black;
+}
+div#calculadora div {
+    display: flex;
+}
+/*Cor dos botões dos operadores*/
+div#calculadora div input:nth-child(4) {
+    background:rgb(255, 149, 149);
+}
+/*cor do botão reset "C"*/
+div#quarta input:nth-child(1) {
+    background:black;
+    color: white;
+    
+}
+/*Borda*/
+div#quarta input:nth-child(1), div#calculadora {
+    border-bottom-left-radius: 35px;
+}
+/*cor do botão "="*/
+div#quarta input:nth-child(3) {
+    background:green;
+    color: white;
+}
+/*borda*/
+div#quarta input:nth-child(4), div#calculadora {
+    border-bottom-right-radius: 35px;
+}
+input[type=button]:hover {
+    filter: brightness(50%);
+}
+input[type=button]:active {
+    transform: scale(0.9);
+}
+
+#frase{
+
+  width: 200px;
+  background: black;
+  color: white;
+  padding: 7px;
+  margin-right: 100px;
+
+}
